@@ -31,10 +31,13 @@
         <h1 class="catalogue-heading">Гостиницы Седоны</h1>
         <span class="catalogue-infrastructure">Инфраструктура:</span>
         <div class="catalogue-left-checkboxes">
-          <input class="checkbox-pool" type="checkbox" checked>
-          <input class="checkbox-parking" type="checkbox" checked>
-          <input class="checkbox-wifi" type="checkbox">
+          <label class="checkbox-label">
+          <input class="checkbox-pool" type="checkbox" checked>Бассейн
+          <input class="checkbox-parking" type="checkbox" checked>Парковка
+          <input class="checkbox-wifi" type="checkbox">Wi-Fi
+        </label>
         </div>
+        <span class="catalogue-type">Тип Жилья</span>
         <div class="catalogue-right-radio">
           <label class="radio-label">
             <input class="radio-hotel" type="radio" name="radio-hotel" value="radio-h">
@@ -42,26 +45,87 @@
             <input class="radio-appartments" type="radio" name="radio-appartments" value="radio-a">
           </label>
         </div>
+        <span class="catalogue-value">Стоимость, Р</span>
+        <!--  
+          Стоимость + ползунок
+        -->
+        <button type="submit">Применить</button>
+        <button type="reset">Сбросить</button>
       </section>
+      <div class="catalogue-finder">
+        <h2>Найдено гостиниц: 38</h2>
+        <!-- Сначала дешёвые -->
+        <button class="finder-group" type="button"></button>
+        <button class="finder-close-up" type="button"></button>
+        <button class="finder-sort" type="button"></button>
+      </div>
+      <section class="catalogue-price-list">
+        <ul class="catalogue-list">
+          <li class="catalogue-first">
+            Amara Resort & Spa
+            Гостиница
+            От 4000 Р
+            <button type="button">Подробнее</button>
+            <button type="button">В Избранное</button>
+          </li>
+          <li class="catalogue-second">
+            Desert Quail Inn
+            Мотель
+            От 3000 Р
+            <button type="button">Подробнее</button>
+            <button type="button">В Избранное</button>
+          </li>
+          <li class="catalogue-first">
+            Villas at Poco Diablo
+            Аппартаменты
+            От 2000 Р
+            <button type="button">Подробнее</button>
+            <button class="button-checked" type="button">В Избранном</button>
+          </li>
+          <li class="catalogue-first">
+            GreenTree Inn
+            Гостиница
+            От 3000 Р
+            <button type="button">Подробнее</button>
+            <button type="button">В Избранное</button>
+          </li>
+        </ul>
+      </section>
+      <button class="catalogue-load-more" type="button">Загрузить ещё</button>
+      <div class="catalogue-finder-buttons">
+        <button class="finder-button-first" type="button">1</button>
+        <button class="finder-button-second" type="button">2</button>
+        <button class="finder-button-third" type="button">3</button>
+        <button class="finder-button-fourth" type="button">4</button>
+        <button class="finder-button-dots" type="button">...</button>
+        <button class="finder-button-last" type="button">10</button>
+      </div>
+      <p class="catalogue-hotels-on-page">Гостиниц на странице:</p>
+      <!-- 
+        выбрать 4 
+      -->
     </main>
     <footer class="page-footer">
-        <section class="page-footer-subscribe">
-          <h2 class="subscribe-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
-          <p class="footer-additional-text">
-            Только полезнаая информация и никакого спама,<br>
-            честное бойскаутское!
-          </p>
-        </section>
-        <section class="footer-buttons">
-          <button class="twitter-button">twitter</button>
-          <button class="facebook-button">facebook</button>
-          <button class="youtube-button">youtube</button>
-        </section>
-        <span class="page-footer-telephone">+7 (812) 812-12-12</span>
-        <a class="academy-link" href="#">
-          <img class="footer-logo-htmlacademy" src="" alt="footer-logo">
-        </a>
-      </footer>
+      <section class="page-footer-subscribe">
+        <h2 class="subscribe-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+        <p class="footer-additional-text">
+          Только полезнаая информация и никакого спама,<br>
+          честное бойскаутское!
+        </p>
+        <input class="footer-input" type="text">
+        <input class="footer-submit" type="submit">
+        <button class="footer-button" type="submit"></button>
+      </section>
+      <section class="footer-buttons">
+        <button class="twitter-button">twitter</button>
+        <button class="facebook-button">facebook</button>
+        <button class="youtube-button">youtube</button>
+      </section>
+      <span class="page-footer-telephone">+7 (812) 812-12-12</span>
+      <a class="academy-link" href="#">
+        <img class="footer-logo-htmlacademy" src="" alt="footer-logo">
+      </a>
+    </footer>
     </body>
   </html>
   
